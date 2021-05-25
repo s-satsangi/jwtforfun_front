@@ -7,7 +7,7 @@ const Register = () => {
     
     const registerUser = (e) => {
         e.preventDefault()
-        axios.get("http://localhost:3000/newuser").then(res=>res.json()).then(res=>console.log(res))
+        axios.get("http://localhost:3000/newuser").then(res=>res.json()).then(res=>console.log(res ))
         console.log("Register fetch goes here")
     }
 
