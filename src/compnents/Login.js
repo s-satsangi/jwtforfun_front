@@ -9,6 +9,11 @@ const Login = () => {
     e.preventDefault();
   }
 
+  const handleChange = (e, setHook) => {
+    setHook(e.target.value)
+}
+
+
   return <div></div>;
 };
 
