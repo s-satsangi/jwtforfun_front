@@ -14,7 +14,24 @@ const Login = () => {
 }
 
 
-  return <div></div>;
+  return <div>
+    <form onSubmit={loginUser}>
+      <input 
+        type="text"
+        value={login}
+        onChange={(e)=>handleChange(e,setLogin)}
+      />
+      <input 
+        type="text"
+        value={password}
+        onChange={(e)=>handleChange(e,setPassword)}
+      />
+      <input 
+        type="submit"
+        value="Login User"
+      />
+    </form>
+  </div>;
 };
 
 export default Login;
